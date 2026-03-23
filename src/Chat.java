@@ -1,20 +1,24 @@
-
+/**
+ * Représente un chat.
+ */
 public class Chat extends Animal {
+
 	/**
-	 * Constructeur de la classe qui ne fait qu'appeler le constructeur de la classe mère
-	 * @param nom
+	 * Initialise un chat avec son nom.
+	 *
+	 * @param nom nom du chat
 	 */
 	public Chat(String nom)
 	{
 		super(nom);
-		
 	}
+
 	/**
-	 *  On surchage ici la méthode en ajoutant le fait que ça soit un chat
+	 * Affiche le nom du chat et son type.
 	 */
 	@Override
 	public void affiche() {
 		super.affiche();
-		System.out.println(" et je suis un Chat");
+		System.out.println(" et je suis un chat");
 	}
 }

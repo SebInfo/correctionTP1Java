@@ -1,5 +1,17 @@
 public class TestAnimal {
 
+	private static String accordAnimal(int nombre) {
+		return nombre > 1 ? "animaux" : "animal";
+	}
+
+	private static String accordChat(int nombre) {
+		return nombre > 1 ? "chats" : "chat";
+	}
+
+	private static String accordChien(int nombre) {
+		return nombre > 1 ? "chiens" : "chien";
+	}
+
 	public static void main(String[] args) {
 		// Création d'un chenil avec la classe Chenil
 		Chenil monChenil = new Chenil();
@@ -20,15 +32,15 @@ public class TestAnimal {
 			System.out.println("Cet animal n'existe pas !");
 		};
 		monChenil.afficher();
-		System.out.println("Il y a "+ monChenil.combien() +" animaux dans le chenil");
+		System.out.println("Il y a "+ monChenil.combien() +" " + accordAnimal(monChenil.combien()) + " dans le chenil");
 		monChenil.ajouter(sushi);
-		System.out.println("Il y a "+ monChenil.combien() +" animaux dans le chenil");
+		System.out.println("Il y a "+ monChenil.combien() +" " + accordAnimal(monChenil.combien()) + " dans le chenil");
 		monChenil.ajouter(new Chat("cat"));
 		monChenil.ajouter(new Chien("ouaf"));
-		System.out.println("Il y a "+ monChenil.nbrChat()+" chats dans mon chenil");
-		System.out.println("Il y a "+ monChenil.nbrChien()+" chiens dans mon chenil");
+		System.out.println("Il y a "+ monChenil.nbrChat()+" " + accordChat(monChenil.nbrChat()) + " dans mon chenil");
+		System.out.println("Il y a "+ monChenil.nbrChien()+" " + accordChien(monChenil.nbrChien()) + " dans mon chenil");
 		monChenil.retirer(rex);
-		System.out.println("Il y a "+ monChenil.nbrChien()+" chiens dans mon chenil");
+		System.out.println("Il y a "+ monChenil.nbrChien()+" " + accordChien(monChenil.nbrChien()) + " dans mon chenil");
 		monChenil.ajouter(new Chat("cat"));
 		monChenil.ajouter(new Chat("cat"));
 		monChenil.ajouter(new Chat("cat"));

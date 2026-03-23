@@ -1,29 +1,25 @@
-
 /**
- * Classe abstraite servant de modèle 
- * 
- * @author sebastien
- *
+ * Représente un animal identifié par son nom.
  */
 public abstract class Animal {
+
+	/** Nom de l'animal. */
 	protected String nom;
 	
 	/**
-	 * Constructeur qui sera appelé dans les classe filles
-	 * @param nom
+	 * Initialise un animal avec son nom.
+	 *
+	 * @param nom nom de l'animal
 	 */
-	
-	
 	public Animal(String nom) 
 	{
-		this.nom=nom;
+		this.nom = nom;
 	}
 
 	/**
-	 *  Méthode qu'on pourra surcharger dans les classes filles
+	 * Affiche le nom de l'animal.
 	 */
 	public void affiche() {
 		System.out.print(this.nom);
 	}
-	
 }
