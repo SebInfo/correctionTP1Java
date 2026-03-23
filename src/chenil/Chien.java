@@ -1,3 +1,5 @@
+package chenil;
+
 /**
  * Représente un chien.
  */

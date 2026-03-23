@@ -1,3 +1,5 @@
+package chenil;
+
 /**
  * Représente un animal identifié par son nom.
  */

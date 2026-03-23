@@ -1,3 +1,5 @@
+package chenil;
+
 public class TestAnimal {
 
 	private static String accordAnimal(int nombre) {
